@@ -1,0 +1,6 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+   - name: To install httpd package
+     package: name=httpd state=latest
